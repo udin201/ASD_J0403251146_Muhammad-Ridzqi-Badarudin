@@ -3,12 +3,14 @@
 #latihan dasar 1 : Membuat fungsi load data
 #=======================================
 
-nama_file = "data_mahasiswa.txt"
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+nama_file = os.path.join(script_dir, "data_mahasiswa.txt")
 
 #membuat fungsi untuk membaca data mahasiswa
 def baca_data_mahasiswa(nama_file):
   data_dict = {} #inisialisasi data dictionary
-  with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+  with open(nama_file,"r", encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter newline
 
