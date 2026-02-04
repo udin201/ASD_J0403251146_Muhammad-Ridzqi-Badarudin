@@ -3,9 +3,15 @@
 #latihan dasar 1 : membaca file teks
 #=======================================
 
+import os
+
+# Get the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+data_file = os.path.join(script_dir, "data_mahasiswa.txt")
+
 #membuka file dalam satu string
 print("===Membuka file dalam satu string===")
-with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+with open(data_file,"r", encoding="utf-8") as file:
     isi_file = file.read() #membaca seluruh isi file
 print(isi_file)
 print("===Hasil Read===")
@@ -16,7 +22,7 @@ print("jumlah baris: ", isi_file.count("\n")+1)
 #membuka file per baris
 print("===Membaca file per baris===")
 jumlah_baris = 0
-with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+with open(data_file,"r", encoding="utf-8") as file:
     for baris in file:
         jumlah_baris = jumlah_baris + 1
         baris = baris.strip()
@@ -27,7 +33,7 @@ with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
 #praktium 1 konsep adt dan file handling
 #latihan dasar 2 : parsing baris menjadi kolom data
 #=======================================
-with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+with open(data_file,"r", encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter newline
         nim, nama, nilai = baris.split(",") #pecah menjadi data satuan
@@ -39,7 +45,7 @@ with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
 #=======================================
 data_list = [] # List untuk menyimpan data mahasiswa
 
-with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+with open(data_file,"r", encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip()
         nim, nama, nilai = baris.split(",")
@@ -62,7 +68,7 @@ print("contoh record pertama:", data_list[0])#array dimulai dari 0
 #==============================
 
 data_dict = {} # Dictionary untuk menyimpan data mahasiswa
-with open("data_mahasiswa.txt","r", encoding="utf-8") as file:
+with open(data_file,"r", encoding="utf-8") as file:
     for baris in file:
         baris = baris.strip() #menghilangkan karakter newline
         nim, nama, nilai = baris.split(",") #pecah menjadi data satuan
