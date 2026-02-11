@@ -13,7 +13,7 @@ class Node:
 
 # ==============================
 # Membuat Linked List
-# ==============================
+# ==============================3
 class LinkedList:
     def __init__(self):
         self.head = None
