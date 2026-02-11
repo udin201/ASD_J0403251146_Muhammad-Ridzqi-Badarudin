@@ -173,4 +173,4 @@ while True:
         print("Pilihan tidak valid. Coba lagi.")
 
 if __name__ == "__main__":
- main()
+    main()
