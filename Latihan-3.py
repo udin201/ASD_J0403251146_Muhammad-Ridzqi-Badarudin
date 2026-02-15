@@ -64,7 +64,6 @@ class LinkedList:
 
         return merged_list
 
-
 # ==========================
 # Program Utama
 # ==========================
