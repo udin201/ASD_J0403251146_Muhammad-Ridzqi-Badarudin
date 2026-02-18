@@ -50,8 +50,25 @@ class LinkedList:
         #3) head pindah ke node baru
         self.head = nodeBaru 
 
-    def tampil(self):
+    def hapus_awal(self):
+        data_terhapus = self.head.data #simpan data yang akan dihapus (opsional)
+        self.head = self.head.next #head pindah ke node berikutnya
+        print("Node yang dihapus adalah:", data_terhapus)
+
+    def tampilkan(self):
         current = self.head
         while current is not None:
             print(current.data)
             current = current.next
+
+
+print("=== List Baru ===")
+ll = LinkedList() #instasiasi objek ke class Linked List
+ll.insert_awal("C")
+ll.insert_awal("B")
+ll.insert_awal("A")
+ll.tampilkan()
+print("\n=== Hapus Node Awal ===")
+ll.hapus_awal()
+print("\n=== List Setelah Hapus ===")
+ll.tampilkan()  
