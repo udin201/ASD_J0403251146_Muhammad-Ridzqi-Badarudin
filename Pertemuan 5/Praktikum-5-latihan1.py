@@ -7,11 +7,13 @@
 # ==========================================================
 # Latihan 1: Rekursi Pangkat
 # ==========================================================
-def pangkat(a, n):
+def pangkat(a, n):              # Mendefinisikan fungsi bernama pangkat dengan parameter a (bilangan) dan n (pangkat)
     # Base case
-    if n == 0:                 # berhenti saat n=0 (a^0 = 1)
-        return 1
+    if n == 0:                  # Kondisi dasar: jika pangkat bernilai 0
+        return 1                # Kembalikan nilai 1 karena setiap bilangan berpangkat 0 hasilnya 1
+    
     # Recursive case
-    return a * pangkat(a, n - 1) # panggil lagi dengan n-1 (dibuat makin kecil biar nyampe base case)
-
-print(pangkat(2, 4))  # Output: 16  # urutannya: pangkat(2,4)->...->pangkat(2,0), lalu balik sambil dikali 2
+    return a * pangkat(a, n - 1)  # Memanggil fungsi pangkat secara rekursif dengan nilai n dikurangi 1 kemudian dikali n
+                                
+print(pangkat(2, 4))            # Memanggil fungsi pangkat dengan a=2 dan n=4,
+                        

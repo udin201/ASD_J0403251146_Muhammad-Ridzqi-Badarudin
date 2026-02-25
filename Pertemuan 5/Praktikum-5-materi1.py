@@ -10,11 +10,13 @@
 # base case => 0 berhenti
 #====================================
 
-def faktorial(n):
-    #base case
-    if n == 0: #base case
-        return 1
-    #recursive case
-    return n * faktorial(n-1) #n-1*n-2*n-3*...n-?
-print("======Program Faktorial======")
-print("Hasil faktorial :", faktorial(3))
+def faktorial(n):                 # Membuat fungsi untuk menghitung faktorial suatu bilangan
+    # Base case
+    if n == 0:                    # Jika n bernilai 0
+        return 1                  # Kembalikan 1 karena 0! = 1
+
+    # Recursive case
+    return n * faktorial(n - 1)   # Mengalikan n dengan hasil faktorial dari n-1
+
+print("===Program Faktorial===")  # Menampilkan judul program
+print(f"Hasil Faktorial: {faktorial(3)}")  # Memanggil fungsi faktorial dan menampilkan hasilnya

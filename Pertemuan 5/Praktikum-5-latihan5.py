@@ -7,14 +7,12 @@
 # ==========================================================
 # Studi Kasus: Generator PIN
 # ==========================================================
-def buat_pin(panjang, hasil=""):
-    if len(hasil) == panjang:        # base case: PIN sudah sepanjang yang diminta
-        print("PIN:", hasil)
-        return
+def buat_pin(panjang, hasil=""):        # Membuat fungsi untuk menghasilkan kombinasi PIN
+    if len(hasil) == panjang:            # Jika panjang PIN sudah sesuai dengan yang ditentukan
+        print("PIN:", hasil)              # Menampilkan PIN yang terbentuk
+        return                            # Menghentikan proses pada cabang ini
 
-    for angka in ["0", "1", "2"]:
-        # supaya angka tidak berulang: sebelum rekursi, cek dulu
-        # if angka in hasil: continue  # kalau sudah pernah dipakai, lewati
-        buat_pin(panjang, hasil + angka)
+    for angka in ["0", "1", "2"]:         # Perulangan untuk memilih setiap digit yang tersedia
+        buat_pin(panjang, hasil + angka)  # Menambahkan digit lalu memanggil fungsi secara rekursif
 
-buat_pin(3)
+buat_pin(3)                               # Menjalankan fungsi untuk membuat PIN 3 digit

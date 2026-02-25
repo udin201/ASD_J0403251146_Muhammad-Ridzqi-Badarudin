@@ -7,13 +7,12 @@
 # ==========================================================
 # Latihan 4: Kombinasi Huruf
 # ==========================================================
-def kombinasi(n, hasil=""):
-    if len(hasil) == n:             # base case: panjang sudah n → 1 kombinasi jadi
-        print(hasil)
-        return
+def kombinasi(n, hasil=""):        # Membuat fungsi untuk menghasilkan kombinasi huruf A dan B
+    if len(hasil) == n:            # Jika panjang hasil sudah sama dengan n
+        print(hasil)               # Cetak kombinasi yang terbentuk
+        return                     # Hentikan proses pada cabang ini
 
-    kombinasi(n, hasil + "A")       # pilihan 1 untuk tiap posisi
-    kombinasi(n, hasil + "B")       # pilihan 2 untuk tiap posisi
-    # jumlah output = 2^n, karena tiap posisi selalu punya 2 pilihan (A/B) sampai n posisi
+    kombinasi(n, hasil + "A")      # Menambahkan huruf A lalu memanggil fungsi secara rekursif
+    kombinasi(n, hasil + "B")      # Menambahkan huruf B lalu memanggil fungsi secara rekursif
 
-kombinasi(2)
+kombinasi(2)                       # Menjalankan fungsi untuk kombinasi dengan panjang 2
