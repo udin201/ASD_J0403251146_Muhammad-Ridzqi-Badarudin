@@ -13,10 +13,10 @@
 # FUNGSI: Membaca data stok barang dari file
 # Data disimpan ke dictionary dengan key = KodeBarang
 # ------------------------------------------------------------
-def baca_data_barang(nama_file):
+def baca_data_barang(stok_barang):
     data_barang = {}  # Dictionary untuk menyimpan data barang
 
-    with open(nama_file, "r", encoding="utf-8") as file:
+    with open(stok_barang, "r", encoding="utf-8") as file:
         for baris in file:
             baris = baris.strip()
             kode, nama, stok = baris.split(",")
