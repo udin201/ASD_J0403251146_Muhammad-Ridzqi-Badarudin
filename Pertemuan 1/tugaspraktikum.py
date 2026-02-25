@@ -1,3 +1,9 @@
+#===================================
+#Nama   : Muhammad Ridzqi Badarudin
+#NIM    : J0403251146
+#Kelas  : B
+#===================================
+
 # ============================================================
 # Praktikum Modul 1
 # Studi Kasus: Manajemen Stok Barang (File Handling & Dictionary)

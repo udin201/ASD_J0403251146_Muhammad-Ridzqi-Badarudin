@@ -1,3 +1,9 @@
+#===================================
+#Nama   : Muhammad Ridzqi Badarudin
+#NIM    : J0403251146
+#Kelas  : B
+#===================================
+
 #======================================
 #praktium 1 konsep adt dan file handling
 #latihan dasar 1 : membaca file teks

@@ -1,7 +1,13 @@
-#=======================================
+#===================================
+#Nama   : Muhammad Ridzqi Badarudin
+#NIM    : J0403251146
+#Kelas  : B
+#===================================
+
+#==========================================
 #praktikum 2 Konsep ADT dan File Handling
 #latihan dasar 1 : Membuat fungsi load data
-#=======================================
+#==========================================
 
 import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
