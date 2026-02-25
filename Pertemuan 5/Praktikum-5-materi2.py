@@ -15,7 +15,7 @@
 def hitung(n):
     print("Masuk", n)
     if n == 0:
-        print("Basw case tercapai, berhenti")
+        print("Base case tercapai, berhenti")
         return 1
     hasil = n * hitung(n-1)
     print("Keluar", n)
