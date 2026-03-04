@@ -23,7 +23,7 @@ def insertion_sort(data):
         print("Iterasi ke- ", i)
         print("Nilai Key = ", key)
         print("Bagian Kiri (terurut): ", data[:i])
-        print("Bagian Kanan (belum terurut): ", data[:i])
+        print("Bagian Kanan (belum terurut): ", data[i+1:])
 
         #geser
         while j>=0 and data[j] > key:
@@ -33,7 +33,7 @@ def insertion_sort(data):
         data[j+1] = key
 
         print("Setelah disisipkan :", data)
-        print("=",*50)
+        print("="*50)
     return data
 angka = [7,8,5,2,4,6]
 print("Hasil Sorting: ", insertion_sort(angka))
