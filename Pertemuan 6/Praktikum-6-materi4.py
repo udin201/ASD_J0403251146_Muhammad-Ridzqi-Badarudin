@@ -9,7 +9,7 @@
 #====================================
 
 def merge_sort(data,depth=0):
-    indent = "" * depth # indentasi berdasarkan level 
+    indent = "    " * depth # indentasi berdasarkan level
     #base case
     if len(data) <= 1:
         return data
