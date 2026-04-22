@@ -1,7 +1,7 @@
 #==========================================================
 #Nama        : Muhammad Ridzqi Badarudin
 #NIM         : J0403251146
-#Kelas       : TPL/B-P2
+#Kelas       : TPL/B-B1
 #Mata Kuliah : Algoritma & Struktur Data
 #==========================================================
 #Latihan 6: Rotasi Kanan pada BST Tidak Seimbang
